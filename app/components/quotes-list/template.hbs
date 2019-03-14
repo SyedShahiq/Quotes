@@ -1,6 +1,8 @@
 <div class="p-q">
 	<div class="inner">
-		{{quotes-list/quotes-message}}
+		{{#each quotes as |quote|}}
+	  		{{quotes-list/quotes-message quote = quote}}
+		{{/each}}
 	</div>
 </div>
 {{yield}}

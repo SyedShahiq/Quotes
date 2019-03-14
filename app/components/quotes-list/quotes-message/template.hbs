@@ -3,8 +3,8 @@
         <img src="images/gravatar.png" alt="avatar">
     </div>
     <div class="col-sm-11">
-	{{#link-to "user"}}	<h2>John</h2> {{/link-to}}
-		<p>I am what i am</p>
+	{{#link-to "user"}}	<h2>{{quote.user}}</h2> {{/link-to}}
+		<p>{{quote.text}}</p>
 	</div>
 </div>
 {{yield}}
